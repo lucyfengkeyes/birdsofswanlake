@@ -76,7 +76,18 @@
         }
 
         window.addEventListener("scroll", updateBirdSounds);
+        document.addEventListener("click", function() {
 
+            swan.play();
+            swan.pause();
+            
+            goose.play();
+            goose.pause();
+
+            cardinal.play();
+            cardinal.pause();
+
+        });
         updateBirdSounds();
 
         </script>
