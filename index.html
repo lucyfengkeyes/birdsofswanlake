@@ -10,17 +10,25 @@
         const swan = new Audio("trumpeterswan.mp3");
         const goose = new Audio("canadagoose.mp3");
         const cardinal = new Audio("northerncardinal.mp3");
-
+        const gull = new Audio("gull.mp3");
+        const dove = new Audio("mourningdove.mp3");
+        const warbler = new Audio("warbler.mp3");
+        const woodpecker = new Audio("woodpecker.mp3");
+        
         swan.loop = true;
         goose.loop = true;
         cardinal.loop = true;
+        gull.loop = true;
+        dove.loop = true;
+        warbler.loop = true;
+        woodpecker.loop = true;
 
         const birds = [
         {
             name: "swan",
             left: 900,
             right: 1000,
-            top: 700,
+            top: 750,
             bottom: 800,
             sound: swan
         },
@@ -34,12 +42,47 @@
         },
         {
             name: "cardinal",
-            left: 1000,
+            left: 1700,
             right: 2000,
             top: 100,
             bottom: 300,
             sound: cardinal
+        },
+        {
+            name: "gull",
+            left: 100,
+            right: 400,
+            top: 100,
+            bottom: 900,
+            sound: gull
+        },
+        {
+            name: "dove",
+            left: 100,
+            right: 400,
+            top: 100,
+            bottom: 1300,
+            sound: dove
+        },
+        {
+            name: "woodpecker",
+            left: 1300,
+            right: 1800,
+            top: 300,
+            bottom: 800,
+            sound: woodpecker
+        },
+        {
+            name: "warbler",
+            left: 300,
+            right: 800,
+            top: 300,
+            bottom: 500,
+            sound: warbler
         }
+
+
+        
         ];
 
         function updateBirdSounds() {
@@ -80,12 +123,24 @@
 
             swan.play();
             swan.pause();
-            
+
             goose.play();
             goose.pause();
 
             cardinal.play();
             cardinal.pause();
+
+            dove.play();
+            dove.pause();   
+
+            gull.play();
+            gull.pause();
+
+            woodpecker.play();
+            woodpecker.pause();
+
+            warbler.play();
+            warbler.pause();
 
         });
         updateBirdSounds();
